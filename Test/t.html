@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h2></h2>
+	<script type="text/javascript">
+		let salaries = [40000,25000,30000];
+		console.log(salaries);
+		salaries.forEach(function(index,amount,arr){
+			var increment = amount/10;
+			console.log(increment)
+			arr[index] = amount + increment;
+		});
+		console.log(salaries);
+	</script>
+
+</body>
+</html>
+

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods | reduce()</title>
+</head>
+<body>
+<h2>Array Methods | reduce()</h2>
+<p>This method returns a single value.</p>
+<p>It takes 4 arguments.</p>
+<p>minimum 2 parametes.</p>
+<p>maximum 4 parametes.</p>
+<p>function(accumlatoe,ele,index,arr)</p>
+<p>arr.reduce(function(accumlator,ele,index,arr){},default value)</p>
+</body>
+	<script type="text/javascript">
+	let nums = [7,90,8];
+	
+	//nums.reduce(function(acc,ele,i,arr)){
+	let sum = nums.reduce(function(acc,ele){
+		return acc + ele
+	},0);
+	//first iteraation  acc=0,ele=7 =>0+7 = 7
+	//second iteraation  acc=7,ele=90 =>7+90 = 97
+	//third iteraation  acc=97,ele=8 =>97+8 = 105
+	console.log(sum);
+
+	// for finding the max value
+	let maximum_value = nums.reduce(function(acc,ele,i,arr){
+		if(acc > ele){
+			return acc
+		}else{
+			return ele
+		}
+	},nums[0]);
+	//first iteraation  acc=7,ele=7 =>7>7 = 7
+	//second iteraation  acc=7,ele=90 =>7>90 = 90
+	//third iteraation  acc=90,ele=8 =>90>8 = 90
+	console.log(maximum_value);
+
+	
+	</script>
+</html>

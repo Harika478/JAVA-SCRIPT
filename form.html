@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>form</title>
+</head>
+<body>
+	<p>Enter some text in the feild</p>
+	<Form id="myform" onsubmit="return validateForm()">
+		First name:<input type="text" name="fname" id="fname_id"><br>
+		Last name:<input type="text" name="lname" id="lname_id"><br><br>
+		
+	<select name="colleges" id="clg_id">
+	<option value="">---select college---</option>
+			<option value="AEC">AEC</option>
+		    <option value="ACOE">ACOE</option>
+            <option value="ACET">ACET</option>
+        </select><br><br>
+
+        
+	<input type="button" onclick="sample()" value="Submit form">
+	<input type="button" onclick="resetform()" value="Reset">
+	<script>
+	function sample(){
+	document.getElementById('my form').submit()
+}
+function resetform()
+{
+	document.getElementById('my form').reset()
+}
+
+
+
+
+
+</body>
+</html>

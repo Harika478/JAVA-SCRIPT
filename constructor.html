@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Constructor</title>
+</head>
+<body>
+<script type="text/javascript">
+	class Student{
+		constructor(rno,fname,lname,clg){
+		this.rollno=rno;
+		this.firstname=fname;
+		this.lastname=lname;
+		this.college=clg;
+		this.getfullname=function(){
+			return this.firstname+""+this.lastname
+		}
+	}
+}
+let obj=new Student(1234,'Bhargava','harika','ACOE')
+console.log(obj.rollno,obj.firstname,obj.lastname,obj.college)
+let obj1=new Student(143,'Bharu','hari','ACOE')
+console.log(obj1.rollno,obj1.firstname,obj1.lastname,obj1.college)
+
+class cars{
+	constructor(color,amt,names){
+	this.colour=color;
+	this.amount=amt;
+	this.name=names;
+}
+}
+let obj2=new cars('red',200000,'safari')
+console.log(obj2.colour,obj2.amount,obj2.name)
+let trainee=new Student(1234,'Bharu','hari','ACOE')
+console.log(trainee.rollno,trainee.firstname,trainee.lastname,trainee.college)
+</script>
+</body>
+</html>

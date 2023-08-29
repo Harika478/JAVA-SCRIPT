@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Swapping Task</title>
+    <style>
+        *{
+            box-sizing: border-box;
+            justify-content: center;
+            align-items: center;
+        }
+        div{
+            gap: 30px;
+        }
+        img{
+            height: 200px;
+            width: 550px;
+            cursor: pointer;
+        }
+        .leftimage,.rightimage{
+            height: 200px;
+            width: 550px;
+            float: left;
+            border: 2px solid black;
+            margin-top: 15px;
+            margin-left: 20px;
+        }
+        .btn{
+            position: relative;
+            top: 225px;
+            left: 60px;
+            width: 80px;
+            height: 80px;
+            background-color: green;
+            color: black;
+            font-style: bold;
+            font-size: 50px;
+            cursor: pointer;
+            border-radius: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="main" style="height: 705px;width: 1520px;padding: 10px;display: flex;">
+        <div class="left" style="height: 670px;width: 600px;border: 2px solid black;">
+            <img src="../JAVA SCRIPT/imgg/1.jpg" class="leftimage" onclick="selectleft(this)"></img>
+            <img src="../JAVA SCRIPT/imgg/2.jpg" class="leftimage" onclick="selectleft(this)"></img>
+            <img src="../JAVA SCRIPT/imgg/3.jpg" class="leftimage" onclick="selectleft(this)"></img>
+        </div>
+        <div class="middle" style="height: 670px;width: 200px;">
+            <button class="btn" onclick="moveright()">&#8594;</button>
+            <br><br><br><br>
+            <button class="btn" onclick="moveleft()">&#8592;</button>
+        </div>
+        <div class="right" style="height: 670px;width: 600px;border: 2px solid black;">
+            <img src="../JAVA SCRIPT/imgg/4.jpg" class="rightimage" onclick="selectright(this)"></img>
+            <img src="../JAVA SCRIPT/imgg/5.jpg" class="rightimage" onclick="selectright(this)"></img>
+            <img src="" class="rightimage" onclick="selectright(this)"></img>
+        </div>
+        <script>
+            var leftsrc="",imageleft,rightsrc="",imageright;
+            function selectleft(leftimg){
+                if(!leftimg.src.match("../JAVA SCRIPT/imgg/7.jpg")){
+                    if(leftsrc!=""){
+                        imageleft.style.borderColor="black";
+                    }
+                    leftsrc=leftimg.src;
+                    imageleft=leftimg;
+                    leftimg.style.borderColor="blue";
+                }
+            }
+            function selectright(rightimg){
+                if(!rightimg.src.match("../JAVA SCRIPT/imgg/1.jpg")){
+                    if(rightsrc!=""){
+                        imageright.style.borderColor="black";
+                    }
+                    rightsrc=rightimg.src;
+                    imageright=rightimg;
+                    rightimg.style.borderColor="blue";
+                }
+            }
+            function moveleft(){
+                if(rightsrc!=""){
+                    var res=document.getElementsByClassName("leftimage");
+                    for(i=0;i<res.length;i++){
+                        if(res[i].src.match("../JAVA SCRIPT/imgg/2.jpg")){
+                            res[i].src=rightsrc;
+                            rightsrc="";
+                            imageright.src="../JAVA SCRIPT/imgg/3.jpg";
+                            break;
+                        }
+                    }
+                    imageright.style.borderColor="black";
+                }
+            }
+            function moveright(){
+                if(leftsrc!=""){
+                    var res=document.getElementsByClassName("rightimage");
+                    for(i=0;i<res.length;i++){
+                        if(res[i].src.match("../JAVA SCRIPT/imgg/4.jpg")){
+                            res[i].src=leftsrc;
+                            leftsrc="";
+                            imageleft.src="../JAVA SCRIPT/imgg/5.jpg";
+                            break;
+                        }
+                    }
+                    imageleft.style.borderColor="black";
+                }
+            }
+        </script>
+    </div>
+</body>
+</html>

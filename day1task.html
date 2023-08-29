@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Task</title>
+</head>
+<body>
+	<table border="">
+		<thead>
+			<tr>
+				<th>course name</th>
+				<th>course number</th>
+				<th>course fees</th>
+				<th>place</th>
+			</tr>
+		</thead>
+		<tbody id="tbodyid">
+			
+
+		</tbody></table>
+		<script type="text/javascript">
+			var courses=[{
+				"name"="html"
+				"number"=23453
+				"fees"=235
+				"place"="dwp"
+			},
+			{
+				"name"="css"
+				"number"=56473
+				"fees"=534
+				"place"="dwp"
+
+			},
+			{
+				"name"="javascript"
+				"number"=876543
+				"fees"=875
+				"place"="dwp"
+			}]
+			for(i=0;i<=courses.length-1;i++)
+			{
+				let tr=document.createElement('tr')
+				let td1=document.createElement('td')
+				let td2=document.createElement('td')
+				let td3=document.createElement('td')
+				let td4=document.createElement('td')
+				td1.innerText=course[i].name
+				td2.innerText=course[i].number
+				td3.innerText=course[i].fees
+				td4.innerText=course[i].place
+				tr.append(td1)
+				tr.append(td2)
+				tr.append(td3)
+				tr.append(td4)
+				document.getElementById('thodyid').append(tr)
+			}
+		</script>
+	
+
+</body>
+</html>

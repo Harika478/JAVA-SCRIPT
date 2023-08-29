@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods | find()</title>
+</head>
+<body>
+<h2>Array Methods | find()</h2>
+<p>This method returns the value when condition is satifisied then exist from the iteration loop.</p>
+</body>
+	<script type="text/javascript">
+	
+		let trainees = ['venkatesh','divya','ajay','vinay'];
+		let getonename = trainees.find(function(name,i,arr){
+			return name.startsWith('d');
+		})
+		console.log(getonename);
+	
+	</script>
+</html>

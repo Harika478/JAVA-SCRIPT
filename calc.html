@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<style type="text/css">
+		td{
+			text-align: center;
+			font-weight: bold;
+			border: 1px solid navy;
+			background-color: lightgrey;
+			border-radius: 30px;
+		}
+		td:not(#result_id){
+			cursor: pointer;
+		}
+
+	</style>
+</head>
+<body>
+	<center>
+		<h1>Calculator</h1>
+		<table border="1" cellspacing="0" cellpadding="6" width="400">
+			<tr>
+				<td colspan="4" style="height: 30px; text-align: right;" id="result_id"></td>
+			</tr>
+			<tr>
+				<td onclick="getnum('9')">9</td>
+				<td onclick="getnum('8')">8</td>
+				<td onclick="getnum('7')">7</td>
+				<td onclick="getnum('/')">/</td>
+			</tr>
+			<tr>
+				<td onclick="getnum('6')">6</td>
+				<td onclick="getnum('5')">5</td>
+				<td onclick="getnum('4')">4</td>
+				<td onclick="getnum('*')">*</td>
+			</tr>
+			<tr>
+				<td onclick="getnum('3')">3</td>
+				<td onclick="getnum('2')">2</td>
+				<td onclick="getnum('1')">1</td>
+				<td onclick="getnum('-')">-</td>
+			</tr>
+			<tr>
+				<td onclick="getnum('0')">0</td>
+				<td onclick="clearAll('c')">c</td>
+				<td onclick="getnum('=')">=</td>
+				<td onclick="getnum('+')">+</td>
+			</tr>
+
+		</table>
+	</center>
+	<script type="text/javascript">
+		// var tds=document.querySelectorAll('#table_id td');
+		// for (var i=0;i<tds.length;i++){
+		// 	var val=this.innerText
+		// 	if(val=='='){
+		// 		getres=document.getElementById('result_id').innerText
+		// 		document.getElementById('result_id').innerText=eval(getres)
+
+		// 	}
+		// 	else{
+		// 		if(val--'C'){
+		// 			document.getElementById('result_id').innerText=''
+		// 		}
+		// 		else{
+		// 				document.getElementById('result_id').innerText+=val
+		// 			}
+
+		// 	}
+		// }
+		function getnum(val){
+			//alert(val)
+			if(val=='='){
+				let res=document.getElementById('result_id').innerText
+				document.getElementById('result_id').innerText=eval(res);
+			}
+			else{
+			document.getElementById('result_id').innerText+=val
+		}
+		}
+		function clearAll(){
+			document.getElementById('result_id').innerText="";
+		}
+		
+	</script>
+
+
+</body>
+</html>

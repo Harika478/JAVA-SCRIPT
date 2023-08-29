@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>6 task</title>
+</head>
+<body>
+    <script>
+        function fibonacci(n) {
+	let num1 = 0;
+	let num2 = 1;
+	let b;
+	let i = 0;
+	for (i = 0; i < n; i++) {
+		b = num1 + num2;
+		num1 = num2;
+		num2 = b;
+	}
+	return num2;
+}
+
+document.write("Fibonacci of 5 is: " + fibonacci(5) );
+document.write("<br> Fibonacci of 10 is: " + fibonacci(10));
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!-- Array methods 
+map()
+forEach
+filter
+find 
+some
+every -->
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array || Methods</title>
+</head>
+<body>
+	<h2>Array Methods || map()</h2>
+	<p>This method creates a new array and return it after iteration will completed</p>
+</body>
+<script type="text/javascript">
+	let trainees=['hari','bharu','buji','baji'];
+	//for (var i=0;i<trainees.length;i++){
+	//console.log(trainees[i])
+	//}
+	let arr1=trainees.map(function(ele,index,old_arr){
+		return "Dear"+ele
+	})
+//or
+// let arr1=trainees.map(test);
+//function test(ele,index,old_arr){
+//return "Dear" +ele
+//}
+
+console.log(arr1)
+</script>
+
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expression</title>
+</head>
+<body>
+<h2>Regular Expression</h2>
+
+<script type="text/javascript">
+	//let str = 'jdp';
+	// let re = /batch/;
+	// let output = re.test("fullstack batch");
+	//console.log(output);
+
+	// let re1 = /batch/i;
+	// let output1 = re1.test("fullstack BATCH");
+	//console.log(output1);
+
+	// re2 = /^b/;``
+	// output2 = re2.test("batch"); // true
+	// output2 = re2.test("tbatch"); // false
+	// console.log(output2);
+
+	//re = /batch/;
+	// re = /batch/g; // g for multiple indexes
+	// res = re.exec("full stack batch course batch");
+	// console.log(res);
+	// console.log(res.index)
+	// res = re.exec("full stack batch course batch");
+	// //console.log(res);
+	// console.log(res.index)
+	
+	//Number
+	re = /^[0-9]{10}/  // valid upto 10 numbers but exceeded the range
+	re = /^[0-9]{10}$/ // valid upto 10 numbers not exceeded range by $
+	re = /^[9][0-9]{9}$/ // starting with number 9
+	output = re.test("9876543210");
+	console.log(output)
+
+	
+
+
+	
+
+
+
+
+
+</script>
+</body>
+
+</html>

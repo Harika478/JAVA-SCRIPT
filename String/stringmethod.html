@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+     <title>String</title>
+</head>
+<body>
+    <h3>String || Methods</h3>
+<script type="text/javascript">
+    function hb(str) {
+    document.write("<br>"+str)
+    }
+    let b='b harika'
+    hb(b);
+    hb( "str length="+b.length);
+    hb( "char at="+b.charAt(4))
+    hb(b.indexOf('k'))
+    hb(b.indexOf('rika'))
+    hb("last index of="+b.lastIndexOf('a'))
+    let b2=' SATISH ';
+    hb("to lower case="+b2.toLowerCase())
+    hb("to upper case="+b2.toUpperCase())
+    hb("concatination of str="+b.concat(b2))
+    hb("concatination of str="+b.concat(b2,b))
+    hb("for removing spaces="+b2.trim())
+    console.log(b2.split(""))
+    let b3='rama&sita,ram';
+     console.log(b3.split("&"))
+     let b4='rose is red'
+      console.log(b4.startsWith('g'))
+      console.log(b4.startsWith("r"))
+      console.log(b4.endsWith("g"))
+      console.log(b4.endsWith("r"))
+      document.write(b4.endsWith("g"))
+      hb("slice of str="+b.slice(0,4))
+      hb("slice of str="+b.slice(-4))
+      hb("slice of str="+b.slice(-4,-2))
+    hb("includes of string ="+b4.includes('rose is red'))
+    hb("charcodeAt of string ="+b4.charCodeAt('g'))
+      hb('substring of string ='+b4.substring(1,4));
+  hb('substring of string ='+b4.substring(-6));
+  hb('substring of string ='+b4.substring(7,1));
+  hb('repeat of string='+b4.repeat(3));
+  hb('replace of string='+b4.replace('ice','cream'));
+     hb("substr method="+b4.substr(0,6))
+     hb('search method='+b4.search('red'));
+      hb('valueOf method='+b3.valueOf());
+      var b5=50;
+      hb('toString method='+b5.toString(3));
+       hb('match method='+b4.match('is'));
+      hb('match method='+b4.match('hi'));
+      hb('split method='+b4.split(''))
+</script>
+</body>
+</html>
+
+
+    

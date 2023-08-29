@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Regular Expression</title>
+</head>
+<body>
+<h2>Regular Expression</h2>
+<input type="text" name="" id="in_id">
+<br>
+<!-- <button onclick="check_numornot()">check numbers validity</button> -->
+<br>
+<button onclick="check_charactersornot()">check characters validity</button>
+<br>
+<span id="msg_id"></span>
+<script type="text/javascript">
+	function check_numornot() {
+		//re = /^[0-9]{10}$/  //numbers only upto 10 range
+		re = /^[8][0-9]{9}$/  // starting number is 8 only
+		let n = document.getElementById('in_id').value;
+		output = re.test(n); // correct(by $)
+		if(output == true){
+			document.getElementById('msg_id').innerText = 'Correct';
+			document.getElementById('msg_id').style.color='green';
+		}else{
+			document.getElementById('msg_id').innerText = 'Please Enter correct format';
+			document.getElementById('msg_id').style.color='red';
+		}			
+	}
+
+	function check_charactersornot() {
+		re = /^[a-z]+$/ // only small letters
+		re = /^[A-Z]+$/ // only big letters
+		re = /^[a-zA-Z]+$/ // small and big letters
+		re = /^[a-zA-Z0-9]+$/ // alpha numeric characters
+		re = /^\w+@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/; // gmail verification
+		let n = document.getElementById('in_id').value;
+		output = re.test(n);
+		if(output == true){
+			document.getElementById('msg_id').innerText = 'Correct';
+			document.getElementById('msg_id').style.color='green';
+		}else{
+			document.getElementById('msg_id').innerText = 'Please Enter correct format';
+			document.getElementById('msg_id').style.color='red';
+		}			
+	}
+
+
+	
+
+
+
+
+
+</script>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 2px solid lightgray;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        
+            <div  style="float: left;">
+                <img src="../JAVA SCRIPT/imgg/1.jpg" alt="Bhargav" class="a" style="height: 350px; width: 250px; float: left; cursor: pointer; " onclick="getimage('../JAVA SCRIPT/imgg/1.jpg')">
+                <img src="../JAVA SCRIPT/imgg/3.jpg" alt="Bhargav" class="a" style="height: 350px; width: 250px; float: left; cursor: pointer;" onclick="getimage('../JAVA SCRIPT/imgg/3.jpg')">
+                <img src="../JAVA SCRIPT/imgg/2.jpg" alt="Bhargav" class="a" style="height: 350px; width: 250px; float: right; cursor: pointer;" onclick="getimage('../JAVA SCRIPT/imgg/2.jpg')">
+            </div>
+            <div class="a" style="height: 350px; width: 250px; float: left;" id="op"></div>
+        
+    </center>
+    <script>
+        function getimage(im_p){
+            document.getElementById('op').innerHTML="<img src='"+im_p+"'style='width:250px;height:350px;' />"
+        }
+    </script>
+</body>
+</html>

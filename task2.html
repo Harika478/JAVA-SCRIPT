@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task</title>
+</head>
+<body>
+	<h1>Class</h1>
+	<p class="course">Html</p>
+	<p class="course">css</p>
+	<p class="course">Bs</p>
+
+	<!--<ul>
+		<li>AEC</li>
+		<li>ACET</li>
+		<li>ACOE</li>
+	</ul>--->
+	<script type="text/javascript">
+		//let paras=document.getElementByClassName('course');
+		let paras=document.getElementsByTagName('p');
+		console.log(paras);
+		paras[0].innerText='Hyper Text Markup Language';
+		paras[2].style.color='red'
+		/*let lis =document.getElementsByTagName('li');
+		lis[0].style.color='red';
+		lis[0].style.fontSize='50px';*/
+
+	</script>
+
+</body>
+</html>

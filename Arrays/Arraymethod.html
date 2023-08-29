@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Arrays</title>
+</head>
+<body>
+	<script type="text/javascript">
+        document.write("<b>Map() Function<br></b>")
+		let friends=['Satya','Devisri','Anuradha'];
+		let arr1=friends.map(function(ele,index,old_arr){
+			return "Hello  "+ele
+		})
+		document.write(arr1+"<br>")
+		document.write("<b>Filter() Function<br></b>")
+		let arr=[15,18,19,20]
+		function c6(num) {
+
+  			return num >= 18;
+
+			}
+		let age=arr.filter(c6);
+		document.write(age+"<br>")
+		document.write("<b>Sort() Function<br></b>")
+		let viv=[32,65,5751,457]
+		function check(dig){
+			return dig;
+		}
+		let arr2=viv.sort(check);
+		document.write(arr2+"<br>")
+		document.write("<b>forEach() Function<br></b>")
+		let salaries =[40000,25000,30000,75000,90000,134000];
+		document.write(salaries+"<br>");
+		salaries.forEach(function (amount,index,arr) {
+			// body...
+			var increment =amount/10;
+			document.write(increment+"<br>")
+			arr[index]=amount+increment;
+		});
+		document.write(salaries+"<br>");
+		const c = ["Satya"];
+		const v = ["Devi Sri"];
+		document.write("<b>concat() Function<br></b>")
+		const cv = c.concat(v); 
+		document.write(cv+"<br>")
+		let a=[15,18,19,20,45,65,70]
+		function c4(num) {
+  			return num;
+			}
+		let ag=a.every (c4);
+		document.write("<b>every() Function<br></b>")
+		document.write(ag+"<br>")
+		document.write("<b>some() Function<br></b>")
+		let z=[15,18,19,20,50,70]
+		function c3(num) {
+  			return num < 20;
+			}
+		let agg=z.some (c3);
+		document.write(agg+"<br>")
+		let fruits=["Apple","Banana","Grape"]
+		document.write("<b>includes() Function<br></b>")
+		let output=fruits.includes("mango")
+		document.write(output+"<br>")
+		let cars=["bmw ","volvo ","skoda ","range rover"]
+		document.write("<b>join() Function<br></b>")
+		let out=cars.join("and ")
+		document.write(out+"<br>")
+		const num=[175,50,25,254,350]
+		function fun(total,num) {
+			// body...
+			return total-num;
+		}
+		let bb=num.reduce(fun)
+		document.write("<b>reduce() Function<br></b>")
+		document.write(bb+"<br>")
+		let h=[15,18,19,20,50,70]
+		function c2(num) {
+
+  			return num >= 18;
+
+			}
+		let m=h.find(c2);
+		document.write("<b>find() Function<br></b>")
+		document.write(m+"<br>")
+		let o=[15,18,19,20,25,32]
+		function c1(num) {
+
+  			return num >= 18;
+
+			}
+		let p=o.findIndex(c1);
+        document.write("<b>findIndex() Function<br></b>")
+		document.write(p+"<br>")
+		let fruits11=["Apple","Banana","Grape"]
+		document.write("<b>indexOf() Function<br></b>")
+		let z11=fruits11.indexOf("Grape")
+		document.write(z11+"<br>")
+		let fruits22=['Apple','Banana','Grape']
+		document.write("<b>fill() Function<br></b>")
+		let z22=fruits22.fill("mango")
+		document.write(z22+"<br>")
+		let fruits33=['Apple','Banana','Grape']
+		document.write("<b>slice() Function<br></b>")
+		let z33=fruits33.slice(1,3)
+		document.write(z33+"<br>")
+		let fruits44=['Apple','Banana','Grape']
+		document.write("<b>reverse() Function<br></b>")
+		let z44=fruits44.reverse()
+		document.write(z44+"<br>")
+		let fruits55=['Apple','Banana','Grape']
+		document.write("<b>push() Function<br></b>")
+		let z55=fruits55.push("hi")
+		document.write(z55+"<br>")
+		let fruits66=['Apple','Banana','Grape']
+		document.write("<b>pop() Function<br></b>")
+		let z66=fruits66.pop("hi")
+		document.write(z66+"<br>")
+		let fruits77=["Apple","Banana","Grape"]
+		document.write("<b>shift() Function<br></b>")
+		let z77=fruits77.shift("")
+		document.write(z77+"<br>")
+		let fruits88=['Apple','Banana','Grape']
+		document.write("<b>unshift() Function<br></b>")
+		let z88=fruits88.unshift("")
+		document.write(z88+"<br>")
+	</script>
+
+</body>
+</html>

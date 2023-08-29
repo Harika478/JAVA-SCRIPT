@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Array Methods | some()</title>
+</head>
+<body>
+<h2>Array Methods | some()</h2>
+<p>This method returns the boolean value when condition is satifisied then exist from the iteration loop.</p>
+</body>
+	<script type="text/javascript">
+	let mails_ids = ['ss@gmail.com','rrr@gmail.com'];
+	let mailexistornot = mails_ids.some(function(ele,i,arr){
+		return ele == 'ttt@gmail.com'
+	})
+	console.log(mailexistornot)
+		
+	</script>
+</html>

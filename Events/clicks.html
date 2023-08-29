@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Events|| task</title>
+</head>
+<body>
+	<!-- <button onclick="incrbyone()">Incr by 1</button>
+	<button onclick="decrbyone()">Decr by 1</button>
+	<p id="output_id"></p>
+	<script>
+		var i=0;
+		function incrbyone(){
+			if (i<6){
+				document.getElementById("output_id").innerText=++i;
+			}
+		}
+		function decrbyone(){
+			if(i>1){
+				document.getElementById("output_id").innerText=--i;
+
+			}
+		}
+	</script> -->
+
+    <center>
+	<button onclick="nextslide()">Next</button>
+	<button onclick="prevslide()">Prev</button>
+	<p id="output_id">
+		<img src="1.jpg" style="width:200px;height: 200px;">
+	</p>
+</center>
+<script>
+	var i=1;
+		function nextslide(){
+			if (i<5){
+				var res=++i;
+				document.getElementById('output_id').innerHTML="<img scr='"+res+".jpg'
+				style='width:200px;height:200px;'/>";
+			
+	
+</script>
+	
+
+</body>
+</html>

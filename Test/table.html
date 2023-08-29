@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>task</title>
+</head>
+<body>
+	<h2>Array Methods || map()</h2>
+	<p>This method creates a new array and return it after iteration will completed</p>
+</body>
+<script type="text/javascript">
+	let trainees=['hari','bharu','buji','baji'];
+	//for (var i=0;i<trainees.length;i++){
+	//console.log(trainees[i])
+	//}
+	let arr1=trainees.map(function(ele,index,old_arr){
+		return "Dear"+ele
+	})
+//or
+// let arr1=trainees.map(test);
+//function test(ele,index,old_arr){
+//return "Dear" +ele
+//}
+
+console.log(arr1)
+
+	let trainees1=[
+	{
+		'name':'Bharu',
+		'rollno':1234
+	},
+	{
+		'name':'hari';
+		'rollno':3345
+	}]
+	let tr='';
+	trainees1.map(function(each_trainee,i,arr){
+		tr+="<tr><td>"+(i+1)+"</td><td>"+each_trainee.name+"</td><td>"+each_trainee.rollno+"</td></tr>"
+
+})
+	//console.logA(tr)
+	document.getElementById('table_id').innerHTML=tr
+
+</script>
+
+</html>
